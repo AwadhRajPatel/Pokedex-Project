@@ -15,10 +15,10 @@ function PokemonDetails(){
             height:response.data.height,
             types: response.data.types.map((t) => t.type.name)
         })
-    }
-
+    } 
+       
     useEffect(()=>{
-        downloadPokemon();
+        downloadPokemon(); 
     },[]);
 
     return(
